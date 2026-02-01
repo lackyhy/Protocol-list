@@ -70,6 +70,7 @@ HTTP:
 | 431 | Request Header Fields Too Large      | Заголовки запроса слишком велики для обработки.                                                      |
 | 450 | Blocked by Windows Parental Controls | Доступ заблокирован родительским контролем Windows.                                                  |
 | 451 | Unavailable For Legal Reasons        | Доступ к ресурсу закрыт по юридическим причинам (цензура, авторские права).                          |
+
 5xx коды свидетельствуют о проблемах на стороне сервера.      (5xx: Server Error)
 
 | Код | Статус                          | Описание                                                                                                     |
