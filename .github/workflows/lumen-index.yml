@@ -22,12 +22,12 @@ jobs:
       - run: node .github/lumen-index.mjs
       - name: Commit lumen.json
         run: |
-          if git diff --quiet -- lumen.json; then
+          if git diff --quiet -- .github/lumen.json; then
             echo "lumen.json is up to date"
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add lumen.json
+          git add .github/lumen.json
           git commit -m "Update lumen.json"
           git push

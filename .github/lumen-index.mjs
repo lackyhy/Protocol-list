@@ -1,4 +1,4 @@
-// Builds lumen.json: the HTTP codes and protocols from README.md (and the
+// Builds .github/lumen.json: the HTTP codes and protocols from README.md (and the
 // first line of prot/*.md files the README doesn't list), in one file that
 // Lumen downloads for its "h:" search. Run: node .github/lumen-index.mjs
 // The GitHub Action in .github/workflows/lumen-index.yml runs it on every push.
@@ -95,5 +95,5 @@ for (const p of protocols) {
 
 http.sort((a, b) => a.code - b.code);
 const index = { version: 1, http, protocols };
-fs.writeFileSync(path.join(root, "lumen.json"), JSON.stringify(index, null, 2) + "\n");
+fs.writeFileSync(path.join(root, ".github", "lumen.json"), JSON.stringify(index, null, 2) + "\n");
 console.log(`lumen.json: ${http.length} HTTP codes, ${protocols.length} protocols`);
