@@ -103,7 +103,7 @@ SSH:
 
 SFTP:
 
-| Код | Стутус            | Описаение                      |
+| Код | Статус            | Описание                       |
 | --- | ----------------- | ------------------------------ |
 | 0   | OK                | (успех, аналог 200 OK в HTTP). |
 | 2   | EOF               | Конец файла.                   |
@@ -133,7 +133,7 @@ SFTP:
 | [HTTPS](prot/HTTPS.md)       | Hypertext Transfer Protocol Secure                 | Безопасная версия HTTP, где данные шифруются с помощью протоколов TLS/SSL.                                                                                               |
 | [FTP](prot/FTP.md)           | File Transfer Protocol                             | Протокол для передачи файлов между клиентом и сервером. Имеет раздельные каналы для данных и команд. Считается устаревшим и небезопасным.                                |
 | [SSH](prot/SSH.md)           | Secure Shell                                       | Криптографический сетевой протокол для безопасного удалённого управления операционной системой, туннелирования и передачи файлов (SFTP, SCP).                            |
-| [Telnet](prot/Telnet.md)     |                                                    | Протокол для удалённого доступа к командной строке сервера. Передаёт все данные (включая пароли) в открытом виде, поэтому небезопасен.                                   |
+| [Telnet](prot/Telnet.md)     | Telecommunication Network                          | Протокол для удалённого доступа к командной строке сервера. Передаёт все данные (включая пароли) в открытом виде, поэтому небезопасен.                                   |
 | [RDP](prot/RDP.md)           | Remote Desktop Protocol                            | Проприетарный протокол от Microsoft для подключения к удалённому рабочему столу с графическим интерфейсом.                                                               |
 | [SMTP](prot/SMTP.md)         | Simple Mail Transfer Protocol                      | Протокол для отправки исходящей почты от клиента к серверу и для передачи почты между серверами.                                                                         |
 | [POP3](prot/POP3.md)         | Post Office Protocol v3                            | Протокол для загрузки почты с сервера на локальное устройство. Обычно после загрузки письма удаляются с сервера.                                                         |
@@ -147,7 +147,7 @@ SFTP:
 | [RTSP](prot/RTSP.md)         | Real Time Streaming Protocol                       | Протокол управления для потоковой передачи медиаданных (пауза, воспроизведение, запись).                                                                                 |
 | [NFS](prot/NFS.md)           | Network File System                                | Протокол для доступа к файлам по сети в UNIX- и Linux-системах, позволяющий монтировать удалённые каталоги.                                                              |
 | [SMB/CIFS](prot/SMB-CIFS.md) | Server Message Block / Common Internet File System | Сетевой протокол для общего доступа к файлам, принтерам и другим ресурсам в сетях Windows.                                                                               |
-| [WebSocket](prot/WebSocket.md) |                                                    | Протокол, обеспечивающий постоянное двунаправленное соединение (full-duplex) между клиентом и сервером поверх одного TCP-соединения. Используется для чатов, онлайн-игр. |
+| [WebSocket](prot/WebSocket.md) | WebSocket (RFC 6455)                               | Протокол, обеспечивающий постоянное двунаправленное соединение (full-duplex) между клиентом и сервером поверх одного TCP-соединения. Используется для чатов, онлайн-игр. |
 | [MQTT](prot/MQTT.md)        | Message Queuing Telemetry Transport                | Легковесный протокол обмена сообщениями по модели "издатель-подписчик" (publish-subscribe). Широко используется в Интернете вещей (IoT).                                 |
 | [IP](prot/IP.md)             | Internet Protocol                                  | Основной протокол сетевого уровня стека TCP/IP. Отвечает за адресацию (IPv4, IPv6) и маршрутизацию пакетов между сетями.                                                 |
 | [BGP](prot/BGP.md)           | Border Gateway Protocol                            | Протокол маршрутизации между автономными системами (разными провайдерами). Фактически "склеивает" интернет в единое целое.                                               |
@@ -155,12 +155,105 @@ SFTP:
 | [RIP](prot/RIP.md)           | Routing Information Protocol                       | Один из старейших протоколов дистанционно-векторной маршрутизации внутри автономной системы. Простой, но малоэффективен для больших сетей.                               |
 | [TLS/SSL](prot/TLS-SSL.md)   | Transport Layer Security / Secure Sockets Layer    | Криптографические протоколы, обеспечивающие безопасную связь поверх TCP. TLS - современная версия, пришедшая на смену SSL.                                               |
 | [IPsec](prot/IPsec.md)       | Internet Protocol Security                         | Набор протоколов для защиты IP-пакетов на сетевом уровне. Используется для создания VPN.<br>                                                                             |
-| [WireGuard](prot/WireGuard.md) |                                                    | Современный, простой и высокопроизводительный протокол VPN. Работает на уровне ядра операционной системы.                                                                |
-| [OpenVPN](prot/OpenVPN.md)   |                                                    | Популярный протокол VPN с открытым исходным кодом, гибкий и использующий TLS для шифрования.                                                                             |
+| [WireGuard](prot/WireGuard.md) | WireGuard VPN                                      | Современный, простой и высокопроизводительный протокол VPN. Работает на уровне ядра операционной системы.                                                                |
+| [OpenVPN](prot/OpenVPN.md)   | OpenVPN                                            | Популярный протокол VPN с открытым исходным кодом, гибкий и использующий TLS для шифрования.                                                                             |
 | [WPA2/WPA3](prot/WPA2-WPA3.md) | Wi-Fi Protected Access                             | Протоколы безопасности для защиты беспроводных сетей Wi-Fi. Шифруют трафик между устройством и точкой доступа.                                                           |
 | [NTP](prot/NTP.md)           | Network Time Protocol                              | Протокол для синхронизации системного времени компьютеров в сети с высокой точностью.                                                                                    |
 | [QUIC](prot/QUIC.md)         | Quick UDP Internet Connections                     | Современный транспортный протокол от Google, работающий поверх UDP. Объединяет установление соединения и шифрование, уменьшая задержки. Является основой для HTTP/3.     |
 | [gRPC](prot/gRPC.md)         | gRPC Remote Procedure Calls                        | Современный фреймворк для вызова удалённых процедур (RPC), использующий HTTP/2 в качестве транспорта и Protocol Buffers для описания интерфейсов и сериализации данных.  |
+
+
+Дополнительные протоколы (Additional protocols)
+
+
+### Канальный и сетевой уровень
+
+| protocol | name | описание |
+| -------- | ---- | -------- |
+| [IPv6](prot/IPv6.md) | Internet Protocol version 6 | Шестая версия IP со 128-битными адресами, пришедшая на смену IPv4 из-за исчерпания адресного пространства. |
+| [ICMPv6](prot/ICMPv6.md) | ICMP for IPv6 | Служебный протокол IPv6: ошибки, диагностика, а также NDP и MLD. |
+| [NDP](prot/NDP.md) | Neighbor Discovery Protocol | Обнаружение соседей в IPv6, заменяет ARP. Поиск MAC, шлюза и автоконфигурация адресов. |
+| [VLAN / 802.1Q](prot/VLAN-802.1Q.md) | Virtual LAN | Логическое разделение сети на изолированные сегменты и передача их меток по транку. |
+| [STP / RSTP](prot/STP-RSTP.md) | Spanning Tree Protocol | Предотвращает петли в сетях с резервными связями между коммутаторами. |
+| [IGMP](prot/IGMP.md) | Internet Group Management Protocol | Управление членством в multicast-группах IPv4 (например, IPTV). |
+| [NAT](prot/NAT.md) | Network Address Translation | Преобразование частных адресов в публичные, экономия IPv4, проброс портов. |
+| [VXLAN](prot/VXLAN.md) | Virtual eXtensible LAN | Оверлейная виртуализация сетей: L2 поверх L3, до 16 млн сегментов. Основа дата-центров. |
+| [LACP](prot/LACP.md) | Link Aggregation Control Protocol | Объединение нескольких каналов Ethernet в один логический (EtherChannel/LAG). |
+| [LLDP / CDP](prot/LLDP-CDP.md) | Link Layer Discovery Protocol / Cisco Discovery Protocol | Обнаружение соседних устройств на канальном уровне, построение карты сети. |
+
+### Маршрутизация и отказоустойчивость
+
+| protocol | name | описание |
+| -------- | ---- | -------- |
+| [IS-IS](prot/IS-IS.md) | Intermediate System to Intermediate System | Link-state протокол маршрутизации, популярен в магистралях провайдеров. |
+| [EIGRP](prot/EIGRP.md) | Enhanced Interior Gateway Routing Protocol | Продвинутый дистанционно-векторный протокол Cisco с быстрой конвергенцией (DUAL). |
+| [VRRP / HSRP](prot/VRRP-HSRP.md) | Virtual Router Redundancy / Hot Standby Router Protocol | Резервирование шлюза по умолчанию: виртуальный IP делят несколько маршрутизаторов. |
+| [MPLS](prot/MPLS.md) | Multiprotocol Label Switching | Коммутация пакетов по меткам. Основа VPN и Traffic Engineering у провайдеров. |
+
+### Туннели и VPN
+
+| protocol | name | описание |
+| -------- | ---- | -------- |
+| [GRE](prot/GRE.md) | Generic Routing Encapsulation | Простое туннелирование: упаковывает пакеты любых протоколов в IP. Без шифрования. |
+| [L2TP](prot/L2TP.md) | Layer 2 Tunneling Protocol | Туннелирование PPP через IP, обычно в связке L2TP/IPsec. |
+| [PPTP](prot/PPTP.md) | Point-to-Point Tunneling Protocol | Один из первых VPN-протоколов. Устарел и небезопасен. |
+| [PPPoE](prot/PPPoE.md) | PPP over Ethernet | Передача PPP-сессий поверх Ethernet. Используется провайдерами (DSL, FTTB). |
+
+### Передача файлов
+
+| protocol | name | описание |
+| -------- | ---- | -------- |
+| [SFTP](prot/SFTP.md) | SSH File Transfer Protocol | Передача и управление файлами поверх SSH. Не путать с FTP. |
+| [SCP](prot/SCP.md) | Secure Copy Protocol | Простое копирование файлов через SSH. Устаревший протокол. |
+| [TFTP](prot/TFTP.md) | Trivial File Transfer Protocol | Упрощённая передача файлов по UDP. Используется для PXE и прошивок. |
+| [FTPS](prot/FTPS.md) | FTP over TLS/SSL | Классический FTP с шифрованием TLS. |
+
+### Веб
+
+| protocol | name | описание |
+| -------- | ---- | -------- |
+| [HTTP/2](prot/HTTP2.md) | HTTP version 2 | Двоичный HTTP с мультиплексированием потоков и сжатием заголовков HPACK. |
+| [HTTP/3](prot/HTTP3.md) | HTTP version 3 | HTTP поверх QUIC (UDP): без head-of-line blocking, миграция соединений. |
+
+### Аутентификация и безопасность
+
+| protocol | name | описание |
+| -------- | ---- | -------- |
+| [Kerberos](prot/Kerberos.md) | Kerberos | Аутентификация по билетам и SSO. Основной протокол в Active Directory. |
+| [RADIUS](prot/RADIUS.md) | Remote Authentication Dial-In User Service | Централизованная AAA для Wi-Fi, 802.1X, VPN. |
+| [TACACS+](prot/TACACS+.md) | Terminal Access Controller Access-Control System Plus | AAA Cisco для администрирования устройств, с авторизацией команд. |
+| [802.1X / EAP](prot/802.1X-EAP.md) | Port-Based Network Access Control | Контроль доступа к сети на уровне порта (WPA-Enterprise, проводной 802.1X). |
+| [OAuth 2.0 / OIDC](prot/OAuth-OIDC.md) | OAuth 2.0 / OpenID Connect | Делегированная авторизация и вход «Через Google/GitHub» для веба и API. |
+| [SAML](prot/SAML.md) | Security Assertion Markup Language | Корпоративный SSO на базе XML (Okta, Entra ID, ADFS). |
+| [DNSSEC](prot/DNSSEC.md) | DNS Security Extensions | Цифровые подписи записей DNS: защита от подмены ответов. |
+| [DoH / DoT](prot/DoH-DoT.md) | DNS over HTTPS / DNS over TLS | Шифрование DNS-запросов между клиентом и резолвером. |
+| [SOCKS](prot/SOCKS.md) | Socket Secure | Прокси сеансового уровня для произвольных TCP/UDP-соединений (Tor, SSH-туннели). |
+
+### Сервисные протоколы
+
+| protocol | name | описание |
+| -------- | ---- | -------- |
+| [Syslog](prot/Syslog.md) | System Logging Protocol | Централизованный сбор журналов с устройств и серверов. |
+| [NetFlow / IPFIX](prot/NetFlow-IPFIX.md) | NetFlow / IP Flow Information Export | Сбор статистики о сетевых потоках для мониторинга и анализа трафика. |
+| [mDNS / DNS-SD](prot/mDNS-DNS-SD.md) | Multicast DNS / DNS Service Discovery | Разрешение имён и поиск сервисов в локальной сети без DNS-сервера (Bonjour, Avahi). |
+| [LLMNR](prot/LLMNR.md) | Link-Local Multicast Name Resolution | Резолвинг имён в сегменте от Microsoft. Устаревает, рекомендуется отключать. |
+| [NetBIOS](prot/NetBIOS.md) | Network Basic Input/Output System | Устаревший интерфейс для сетей Windows (имена, датаграммы, сеансы). |
+
+### Медиа и реальное время
+
+| protocol | name | описание |
+| -------- | ---- | -------- |
+| [WebRTC](prot/WebRTC.md) | Web Real-Time Communication | Набор технологий для P2P аудио, видео и данных прямо в браузере. |
+| [STUN / TURN / ICE](prot/STUN-TURN-ICE.md) | NAT traversal | Установление соединения между устройствами за NAT (основа WebRTC и VoIP). |
+| [SRTP / RTCP](prot/SRTP-RTCP.md) | Secure RTP / RTP Control Protocol | Шифрование медиапотока и контроль его качества (компаньоны RTP). |
+
+### IoT и промышленные протоколы
+
+| protocol | name | описание |
+| -------- | ---- | -------- |
+| [CoAP](prot/CoAP.md) | Constrained Application Protocol | Лёгкий REST-подобный протокол поверх UDP для маломощных IoT-устройств. |
+| [AMQP](prot/AMQP.md) | Advanced Message Queuing Protocol | Корпоративный обмен сообщениями через брокер с гарантией доставки (RabbitMQ). |
+| [Modbus](prot/Modbus.md) | Modbus | Классический промышленный протокол для ПЛК и датчиков (SCADA/АСУ ТП). |
 
 
 examples:
