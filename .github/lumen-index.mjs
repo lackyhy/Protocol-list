@@ -30,6 +30,9 @@ const http = [];
 const protocols = [];
 let block = ""; // "HTTP", "SSH"...: a "Name:" line before a table of codes
 let group = "";
+// Columns of the current table by their header, so an extra "Название"
+// column (the Russian name) can sit anywhere.
+let columns = { phrase: 1, description: 2, nameRu: -1 };
 
 for (const line of readme.split(/\r?\n/)) {
   const label = /^([A-Za-z][\w /+-]*):\s*$/.exec(line.trim());
@@ -44,6 +47,15 @@ for (const line of readme.split(/\r?\n/)) {
   }
   if (!line.trim().startsWith("|")) continue;
   const row = cells(line);
+  const header = row.map((c) => plain(c).toLowerCase());
+  if (header[0] === "код" || header[0] === "code") {
+    const at = (re, fallback) => {
+      const i = header.findIndex((h) => re.test(h));
+      return i < 0 ? fallback : i;
+    };
+    columns = { phrase: at(/статус|status/, 1), description: at(/описание|description/, 2), nameRu: at(/название|по-русски/, -1) };
+    continue;
+  }
 
   const link = /^\[([^\]]+)\]\((prot\/[^)]+\.md)\)$/.exec(row[0]);
   if (link) {
@@ -59,9 +71,16 @@ for (const line of readme.split(/\r?\n/)) {
   }
 
   const code = /^\d{3}$/.test(row[0]) ? Number(row[0]) : null;
-  if (block === "HTTP" && code && row[1]) {
+  if (block === "HTTP" && code && row[columns.phrase]) {
     if (!http.some((c) => c.code === code)) {
-      http.push({ code, phrase: plain(row[1]), description: plain(row[2] ?? ""), category: `${String(code)[0]}xx` });
+      const nameRu = columns.nameRu >= 0 ? plain(row[columns.nameRu] ?? "") : "";
+      http.push({
+        code,
+        phrase: plain(row[columns.phrase]),
+        ...(nameRu && { nameRu }),
+        description: plain(row[columns.description] ?? ""),
+        category: `${String(code)[0]}xx`,
+      });
     }
   }
 }
