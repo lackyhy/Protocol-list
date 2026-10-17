@@ -5,7 +5,7 @@ name: lumen.json
 on:
   push:
     branches: [main]
-    paths: ["README.md", "prot/**", "scripts/build-lumen-index.mjs"]
+    paths: ["README.md", "prot/**", ".github/lumen-index.mjs"]
   workflow_dispatch:
 
 permissions:
@@ -19,7 +19,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: node scripts/build-lumen-index.mjs
+      - run: node .github/lumen-index.mjs
       - name: Commit lumen.json
         run: |
           if git diff --quiet -- lumen.json; then

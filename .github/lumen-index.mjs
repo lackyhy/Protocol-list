@@ -1,6 +1,6 @@
 // Builds lumen.json: the HTTP codes and protocols from README.md (and the
 // first line of prot/*.md files the README doesn't list), in one file that
-// Lumen downloads for its "h:" search. Run: node scripts/build-lumen-index.mjs
+// Lumen downloads for its "h:" search. Run: node .github/lumen-index.mjs
 // The GitHub Action in .github/workflows/lumen-index.yml runs it on every push.
 import fs from "node:fs";
 import path from "node:path";
