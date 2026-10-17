@@ -1,0 +1,33 @@
+# Rebuilds lumen.json (what Lumen's "h:" search downloads) whenever the
+# README or a protocol page changes, and commits it if it came out different.
+name: lumen.json
+
+on:
+  push:
+    branches: [main]
+    paths: ["README.md", "prot/**", "scripts/build-lumen-index.mjs"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node scripts/build-lumen-index.mjs
+      - name: Commit lumen.json
+        run: |
+          if git diff --quiet -- lumen.json; then
+            echo "lumen.json is up to date"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add lumen.json
+          git commit -m "Update lumen.json"
+          git push

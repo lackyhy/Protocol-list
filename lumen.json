@@ -1,0 +1,1409 @@
+{
+  "version": 1,
+  "http": [
+    {
+      "code": 100,
+      "phrase": "Continue",
+      "description": "Запрос принят, клиент должен продолжать отправку.",
+      "category": "1xx"
+    },
+    {
+      "code": 101,
+      "phrase": "Switching Protocols",
+      "description": "Сервер переключается на другой протокол.",
+      "category": "1xx"
+    },
+    {
+      "code": 102,
+      "phrase": "Processing",
+      "description": "Запрос в обработке.",
+      "category": "1xx"
+    },
+    {
+      "code": 103,
+      "phrase": "Early Hints",
+      "description": "Ранние подсказки, предзагрузка ресурсов.",
+      "category": "1xx"
+    },
+    {
+      "code": 200,
+      "phrase": "OK",
+      "description": "Запрос успешно обработан.",
+      "category": "2xx"
+    },
+    {
+      "code": 201,
+      "phrase": "Created",
+      "description": "Ресурс успешно создан.",
+      "category": "2xx"
+    },
+    {
+      "code": 202,
+      "phrase": "Accepted",
+      "description": "Запрос принят, но обработка не завершена.",
+      "category": "2xx"
+    },
+    {
+      "code": 203,
+      "phrase": "Non-Authoritative Information",
+      "description": "Данные возвращены из изменённой прокси копии, а не оригинала сервера.",
+      "category": "2xx"
+    },
+    {
+      "code": 204,
+      "phrase": "No Content",
+      "description": "Запрос выполнен, контент отсутствует.",
+      "category": "2xx"
+    },
+    {
+      "code": 205,
+      "phrase": "Reset Content",
+      "description": "Запрос выполнен, клиенту следует сбросить представление (например, очистить форму).",
+      "category": "2xx"
+    },
+    {
+      "code": 206,
+      "phrase": "Partial Content",
+      "description": "Частичное содержимое.",
+      "category": "2xx"
+    },
+    {
+      "code": 207,
+      "phrase": "Multi-Status (WebDAV)",
+      "description": "Сообщение содержит несколько статусов для разных частей запроса",
+      "category": "2xx"
+    },
+    {
+      "code": 208,
+      "phrase": "Already Reported (WebDAV)",
+      "description": "Повторяющиеся зависимости уже были перечислены в предыдущем ответе.",
+      "category": "2xx"
+    },
+    {
+      "code": 226,
+      "phrase": "IM Used (HTTP Delta Encoding)",
+      "description": "Сервер выполнил GET-запрос, и ответ представляет результат одного или нескольких манипуляций с экземпляром.",
+      "category": "2xx"
+    },
+    {
+      "code": 300,
+      "phrase": "Multiple Choices",
+      "description": "Есть несколько вариантов ресурса, клиент выбирает один.",
+      "category": "3xx"
+    },
+    {
+      "code": 301,
+      "phrase": "Moved Permanently",
+      "description": "Ресурс перемещен навсегда.",
+      "category": "3xx"
+    },
+    {
+      "code": 302,
+      "phrase": "Found",
+      "description": "Временное перенаправление.",
+      "category": "3xx"
+    },
+    {
+      "code": 303,
+      "phrase": "See Other",
+      "description": "Ответ на запрос находится по другому адресу (всегда ведёт к GET).",
+      "category": "3xx"
+    },
+    {
+      "code": 304,
+      "phrase": "Not Modified",
+      "description": "Ресурс не изменился с последнего обращения.",
+      "category": "3xx"
+    },
+    {
+      "code": 305,
+      "phrase": "Use Proxy",
+      "description": "Запрос к ресурсу должен осуществляться через прокси.",
+      "category": "3xx"
+    },
+    {
+      "code": 307,
+      "phrase": "Temporary Redirect",
+      "description": "Временное перенаправление с сохранением метода.",
+      "category": "3xx"
+    },
+    {
+      "code": 308,
+      "phrase": "Permanent Redirect",
+      "description": "Постоянное перенаправление с сохранением метода.",
+      "category": "3xx"
+    },
+    {
+      "code": 400,
+      "phrase": "Bad Request",
+      "description": "Некорректный запрос.",
+      "category": "4xx"
+    },
+    {
+      "code": 401,
+      "phrase": "Unauthorized",
+      "description": "Требуется аутентификация.",
+      "category": "4xx"
+    },
+    {
+      "code": 402,
+      "phrase": "Payment Required",
+      "description": "Зарезервирован для будущего использования; применяется некоторыми платёжными сервисами и API.",
+      "category": "4xx"
+    },
+    {
+      "code": 403,
+      "phrase": "Forbidden",
+      "description": "Доступ запрещен.",
+      "category": "4xx"
+    },
+    {
+      "code": 404,
+      "phrase": "Not Found",
+      "description": "Ресурс не найден.",
+      "category": "4xx"
+    },
+    {
+      "code": 405,
+      "phrase": "Method Not Allowed",
+      "description": "Метод (GET, POST и т.д.) не поддерживается для данного URL (но поддерживается для других).",
+      "category": "4xx"
+    },
+    {
+      "code": 406,
+      "phrase": "Not Acceptable",
+      "description": "Сервер не может выдать ответ в формате, указанном в заголовках Accept клиента.",
+      "category": "4xx"
+    },
+    {
+      "code": 407,
+      "phrase": "Proxy Authentication Required",
+      "description": "Требуется аутентификация для прокси-сервера.",
+      "category": "4xx"
+    },
+    {
+      "code": 408,
+      "phrase": "Request Timeout",
+      "description": "Сервер не дождался полного запроса от клиента в течение установленного времени.",
+      "category": "4xx"
+    },
+    {
+      "code": 409,
+      "phrase": "Conflict",
+      "description": "Запрос конфликтует с текущим состоянием сервера.",
+      "category": "4xx"
+    },
+    {
+      "code": 410,
+      "phrase": "Gone",
+      "description": "Ресурс удален навсегда.",
+      "category": "4xx"
+    },
+    {
+      "code": 411,
+      "phrase": "Length Required",
+      "description": "Для запроса требуется указать заголовок Content-Length.",
+      "category": "4xx"
+    },
+    {
+      "code": 412,
+      "phrase": "Precondition Failed",
+      "description": "Не выполнено одно из условий, заданных в заголовках запроса (например, If-Match).",
+      "category": "4xx"
+    },
+    {
+      "code": 413,
+      "phrase": "Payload Too Large",
+      "description": "(ранее \"Request Entity Too Large\") — Тело запроса превышает лимит, установленный сервером.",
+      "category": "4xx"
+    },
+    {
+      "code": 414,
+      "phrase": "URI Too Long",
+      "description": "Длина запрашиваемого URL превышает лимит сервера.",
+      "category": "4xx"
+    },
+    {
+      "code": 415,
+      "phrase": "Unsupported Media Type",
+      "description": "Сервер не поддерживает формат данных, указанный в теле запроса.",
+      "category": "4xx"
+    },
+    {
+      "code": 416,
+      "phrase": "Range Not Satisfiable",
+      "description": "Запрошенный диапазон (в Range) не может быть выполнен (выходит за пределы файла).",
+      "category": "4xx"
+    },
+    {
+      "code": 417,
+      "phrase": "Expectation Failed",
+      "description": "Сервер не может удовлетворить условию, указанному в заголовке Expect.",
+      "category": "4xx"
+    },
+    {
+      "code": 418,
+      "phrase": "I'm a teapot (RFC 2324, шуточный)",
+      "description": "Сервер — чайник, не может заваривать кофе.",
+      "category": "4xx"
+    },
+    {
+      "code": 421,
+      "phrase": "Misdirected Request",
+      "description": "Запрос был отправлен на сервер, не способный дать ответ (проблема с конфигурацией).",
+      "category": "4xx"
+    },
+    {
+      "code": 422,
+      "phrase": "Unprocessable Entity",
+      "description": "Запрос синтаксически корректен, но содержит семантические ошибки (например, невалидное поле).",
+      "category": "4xx"
+    },
+    {
+      "code": 423,
+      "phrase": "Locked",
+      "description": "Ресурс, к которому обращаются, заблокирован.",
+      "category": "4xx"
+    },
+    {
+      "code": 424,
+      "phrase": "Failed Dependency",
+      "description": "Запрос не выполнен из-за неудачи предыдущего запроса.",
+      "category": "4xx"
+    },
+    {
+      "code": 425,
+      "phrase": "Too Early",
+      "description": "Сервер не хочет рисковать обрабатывать запрос, который может быть повторён (из-за атаки повторения).",
+      "category": "4xx"
+    },
+    {
+      "code": 426,
+      "phrase": "Upgrade Required",
+      "description": "Сервер требует перехода на другой протокол (например, TLS/1.3).",
+      "category": "4xx"
+    },
+    {
+      "code": 428,
+      "phrase": "Precondition Required",
+      "description": "Сервер требует, чтобы запрос был условным (например, с If-Match).",
+      "category": "4xx"
+    },
+    {
+      "code": 429,
+      "phrase": "Too Many Requests",
+      "description": "Слишком много запросов.",
+      "category": "4xx"
+    },
+    {
+      "code": 431,
+      "phrase": "Request Header Fields Too Large",
+      "description": "Заголовки запроса слишком велики для обработки.",
+      "category": "4xx"
+    },
+    {
+      "code": 450,
+      "phrase": "Blocked by Windows Parental Controls",
+      "description": "Доступ заблокирован родительским контролем Windows.",
+      "category": "4xx"
+    },
+    {
+      "code": 451,
+      "phrase": "Unavailable For Legal Reasons",
+      "description": "Доступ к ресурсу закрыт по юридическим причинам (цензура, авторские права).",
+      "category": "4xx"
+    },
+    {
+      "code": 500,
+      "phrase": "Internal Server Error",
+      "description": "Внутренняя ошибка сервера.",
+      "category": "5xx"
+    },
+    {
+      "code": 501,
+      "phrase": "Not Implemented",
+      "description": "Сервер не поддерживает функциональность, необходимую для выполнения запроса (например, неизвестный метод).",
+      "category": "5xx"
+    },
+    {
+      "code": 502,
+      "phrase": "Bad Gateway",
+      "description": "Ошибки шлюза.",
+      "category": "5xx"
+    },
+    {
+      "code": 503,
+      "phrase": "Service Unavailable",
+      "description": "Сервис недоступен.",
+      "category": "5xx"
+    },
+    {
+      "code": 504,
+      "phrase": "Gateway Timeout",
+      "description": "Таймаут шлюза.",
+      "category": "5xx"
+    },
+    {
+      "code": 505,
+      "phrase": "HTTP Version Not Supported",
+      "description": "Версия HTTP не поддерживается.",
+      "category": "5xx"
+    },
+    {
+      "code": 506,
+      "phrase": "Variant Also Negotiates",
+      "description": "На сервере произошла ошибка конфигурации: выбранный вариант ресурса сам инициирует согласование содержимого.",
+      "category": "5xx"
+    },
+    {
+      "code": 507,
+      "phrase": "Insufficient Storage",
+      "description": "Не удалось выполнить запрос из-за нехватки места на сервере.",
+      "category": "5xx"
+    },
+    {
+      "code": 508,
+      "phrase": "Loop Detected",
+      "description": "Сервер обнаружил бесконечный цикл при обработке запроса.",
+      "category": "5xx"
+    },
+    {
+      "code": 509,
+      "phrase": "Bandwidth Limit Exceeded",
+      "description": "Исчерпана пропускная способность",
+      "category": "5xx"
+    },
+    {
+      "code": 510,
+      "phrase": "Not Extended",
+      "description": "Для доступа к ресурсу требуется расширить запрос.",
+      "category": "5xx"
+    },
+    {
+      "code": 511,
+      "phrase": "Network Authentication Required",
+      "description": "Требуется аутентификация в сети",
+      "category": "5xx"
+    },
+    {
+      "code": 526,
+      "phrase": "Invalid SSL Certificate",
+      "description": "Недействительный SSL-сертификат.",
+      "category": "5xx"
+    },
+    {
+      "code": 529,
+      "phrase": "Site is overloaded",
+      "description": "Сайт перегружен.",
+      "category": "5xx"
+    },
+    {
+      "code": 530,
+      "phrase": "Site is frozen",
+      "description": "Сайт \"заморожен\"",
+      "category": "5xx"
+    },
+    {
+      "code": 598,
+      "phrase": "Network Read Timeout",
+      "description": "Неформальный код, используемый некоторыми прокси для таймаута чтения сети.",
+      "category": "5xx"
+    }
+  ],
+  "protocols": [
+    {
+      "id": "ethernet",
+      "name": "Ethernet",
+      "fullName": "IEEE 802.3",
+      "description": "Основа большинства локальных проводных сетей (LAN). Определяет формат кадров и доступ к среде.",
+      "group": "",
+      "file": "prot/Ethernet.md",
+      "aliases": [
+        "ethernet"
+      ]
+    },
+    {
+      "id": "wi-fi",
+      "name": "Wi-Fi",
+      "fullName": "IEEE 802.11",
+      "description": "Набор стандартов для беспроводных локальных сетей (WLAN).",
+      "group": "",
+      "file": "prot/Wi-Fi.md",
+      "aliases": [
+        "wi-fi",
+        "wifi"
+      ]
+    },
+    {
+      "id": "ppp",
+      "name": "PPP",
+      "fullName": "Point-to-Point Protocol",
+      "description": "Протокол для установления прямого соединения между двумя узлами, часто используется dial-up и DSL-подключениях.",
+      "group": "",
+      "file": "prot/PPP.md",
+      "aliases": [
+        "ppp"
+      ]
+    },
+    {
+      "id": "arp",
+      "name": "ARP",
+      "fullName": "Address Resolution Protocol",
+      "description": "Протокол для преобразования IP-адреса (сетевого уровня) в MAC-адрес (канального уровня) в локальной сети.",
+      "group": "",
+      "file": "prot/ARP.md",
+      "aliases": [
+        "arp"
+      ]
+    },
+    {
+      "id": "icmp",
+      "name": "ICMP",
+      "fullName": "Internet Control Message Protocol",
+      "description": "Протокол для передачи служебных и диагностических сообщений, например, для утилиты ping или сообщений об ошибках маршрутизации.",
+      "group": "",
+      "file": "prot/ICMP.md",
+      "aliases": [
+        "icmp"
+      ]
+    },
+    {
+      "id": "tcp",
+      "name": "TCP",
+      "fullName": "Transmission Control Protocol",
+      "description": "Надёжный протокол с установлением соединения.",
+      "group": "",
+      "file": "prot/TCP.md",
+      "aliases": [
+        "tcp"
+      ]
+    },
+    {
+      "id": "udp",
+      "name": "UDP",
+      "fullName": "User Datagram Protocol",
+      "description": "Быстрый протокол без установления соединения (датаграммный). Не гарантирует доставку и порядок пакетов. Используется для потокового видео, онлайн-игр, DNS-запросов.",
+      "group": "",
+      "file": "prot/UDP.md",
+      "aliases": [
+        "udp"
+      ]
+    },
+    {
+      "id": "sctp",
+      "name": "SCTP",
+      "fullName": "Stream Control Transmission Protocol",
+      "description": "Протокол, сочетающий черты TCP и UDP. Обеспечивает надёжную доставку с поддержкой мультиплексирования нескольких потоков. Часто используется в телекоммуникациях.",
+      "group": "",
+      "file": "prot/SCTP.md",
+      "aliases": [
+        "sctp"
+      ]
+    },
+    {
+      "id": "http",
+      "name": "HTTP",
+      "fullName": "HyperText Transfer Protocol",
+      "description": "Фундаментальный протокол для передачи данных во Всемирной паутине (WWW). Используется для загрузки веб-страниц и работы с API.",
+      "group": "",
+      "file": "prot/HTTP.md",
+      "aliases": [
+        "http"
+      ]
+    },
+    {
+      "id": "https",
+      "name": "HTTPS",
+      "fullName": "Hypertext Transfer Protocol Secure",
+      "description": "Безопасная версия HTTP, где данные шифруются с помощью протоколов TLS/SSL.",
+      "group": "",
+      "file": "prot/HTTPS.md",
+      "aliases": [
+        "https"
+      ]
+    },
+    {
+      "id": "ftp",
+      "name": "FTP",
+      "fullName": "File Transfer Protocol",
+      "description": "Протокол для передачи файлов между клиентом и сервером. Имеет раздельные каналы для данных и команд. Считается устаревшим и небезопасным.",
+      "group": "",
+      "file": "prot/FTP.md",
+      "aliases": [
+        "ftp"
+      ]
+    },
+    {
+      "id": "ssh",
+      "name": "SSH",
+      "fullName": "Secure Shell",
+      "description": "Криптографический сетевой протокол для безопасного удалённого управления операционной системой, туннелирования и передачи файлов (SFTP, SCP).",
+      "group": "",
+      "file": "prot/SSH.md",
+      "aliases": [
+        "ssh"
+      ]
+    },
+    {
+      "id": "telnet",
+      "name": "Telnet",
+      "fullName": "Telecommunication Network",
+      "description": "Протокол для удалённого доступа к командной строке сервера. Передаёт все данные (включая пароли) в открытом виде, поэтому небезопасен.",
+      "group": "",
+      "file": "prot/Telnet.md",
+      "aliases": [
+        "telnet"
+      ]
+    },
+    {
+      "id": "rdp",
+      "name": "RDP",
+      "fullName": "Remote Desktop Protocol",
+      "description": "Проприетарный протокол от Microsoft для подключения к удалённому рабочему столу с графическим интерфейсом.",
+      "group": "",
+      "file": "prot/RDP.md",
+      "aliases": [
+        "rdp"
+      ]
+    },
+    {
+      "id": "smtp",
+      "name": "SMTP",
+      "fullName": "Simple Mail Transfer Protocol",
+      "description": "Протокол для отправки исходящей почты от клиента к серверу и для передачи почты между серверами.",
+      "group": "",
+      "file": "prot/SMTP.md",
+      "aliases": [
+        "smtp"
+      ]
+    },
+    {
+      "id": "pop3",
+      "name": "POP3",
+      "fullName": "Post Office Protocol v3",
+      "description": "Протокол для загрузки почты с сервера на локальное устройство. Обычно после загрузки письма удаляются с сервера.",
+      "group": "",
+      "file": "prot/POP3.md",
+      "aliases": [
+        "pop3"
+      ]
+    },
+    {
+      "id": "imap",
+      "name": "IMAP",
+      "fullName": "Internet Message Access Protocol",
+      "description": "Протокол для управления почтой непосредственно на сервере. Позволяет синхронизировать состояние писем (прочтение, папки) между несколькими устройствами.",
+      "group": "",
+      "file": "prot/IMAP.md",
+      "aliases": [
+        "imap"
+      ]
+    },
+    {
+      "id": "dhcp",
+      "name": "DHCP",
+      "fullName": "Dynamic Host Configuration Protocol",
+      "description": "Протокол для автоматического назначения IP-адресов и других сетевых параметров (маска, шлюз, DNS) устройствам при подключении к сети.",
+      "group": "",
+      "file": "prot/DHCP.md",
+      "aliases": [
+        "dhcp"
+      ]
+    },
+    {
+      "id": "ldap",
+      "name": "LDAP",
+      "fullName": "Lightweight Directory Access Protocol",
+      "description": "Протокол для доступа и управления службами каталогов, которые хранят информацию о пользователях и ресурсах в сети.",
+      "group": "",
+      "file": "prot/LDAP.md",
+      "aliases": [
+        "ldap"
+      ]
+    },
+    {
+      "id": "snmp",
+      "name": "SNMP",
+      "fullName": "Simple Network Management Protocol",
+      "description": "Протокол для управления и мониторинга сетевых устройств (маршрутизаторы, коммутаторы, серверы).",
+      "group": "",
+      "file": "prot/SNMP.md",
+      "aliases": [
+        "snmp"
+      ]
+    },
+    {
+      "id": "sip",
+      "name": "SIP",
+      "fullName": "Session Initiation Protocol",
+      "description": "Протокол сигнализации для установления, изменения и завершения сеансов связи, таких как VoIP-звонки и видеоконференции.",
+      "group": "",
+      "file": "prot/SIP.md",
+      "aliases": [
+        "sip"
+      ]
+    },
+    {
+      "id": "rtp",
+      "name": "RTP",
+      "fullName": "Real-time Transport Protocol",
+      "description": "Протокол для фактической передачи аудио- и видеопотоков в реальном времени. Работает поверх UDP.",
+      "group": "",
+      "file": "prot/RTP.md",
+      "aliases": [
+        "rtp"
+      ]
+    },
+    {
+      "id": "rtsp",
+      "name": "RTSP",
+      "fullName": "Real Time Streaming Protocol",
+      "description": "Протокол управления для потоковой передачи медиаданных (пауза, воспроизведение, запись).",
+      "group": "",
+      "file": "prot/RTSP.md",
+      "aliases": [
+        "rtsp"
+      ]
+    },
+    {
+      "id": "nfs",
+      "name": "NFS",
+      "fullName": "Network File System",
+      "description": "Протокол для доступа к файлам по сети в UNIX- и Linux-системах, позволяющий монтировать удалённые каталоги.",
+      "group": "",
+      "file": "prot/NFS.md",
+      "aliases": [
+        "nfs"
+      ]
+    },
+    {
+      "id": "smb-cifs",
+      "name": "SMB/CIFS",
+      "fullName": "Server Message Block / Common Internet File System",
+      "description": "Сетевой протокол для общего доступа к файлам, принтерам и другим ресурсам в сетях Windows.",
+      "group": "",
+      "file": "prot/SMB-CIFS.md",
+      "aliases": [
+        "smb-cifs",
+        "smbcifs",
+        "smb/cifs",
+        "smb",
+        "cifs"
+      ]
+    },
+    {
+      "id": "websocket",
+      "name": "WebSocket",
+      "fullName": "WebSocket (RFC 6455)",
+      "description": "Протокол, обеспечивающий постоянное двунаправленное соединение (full-duplex) между клиентом и сервером поверх одного TCP-соединения. Используется для чатов, онлайн-игр.",
+      "group": "",
+      "file": "prot/WebSocket.md",
+      "aliases": [
+        "websocket"
+      ]
+    },
+    {
+      "id": "mqtt",
+      "name": "MQTT",
+      "fullName": "Message Queuing Telemetry Transport",
+      "description": "Легковесный протокол обмена сообщениями по модели \"издатель-подписчик\" (publish-subscribe). Широко используется в Интернете вещей (IoT).",
+      "group": "",
+      "file": "prot/MQTT.md",
+      "aliases": [
+        "mqtt"
+      ]
+    },
+    {
+      "id": "ip",
+      "name": "IP",
+      "fullName": "Internet Protocol",
+      "description": "Основной протокол сетевого уровня стека TCP/IP. Отвечает за адресацию (IPv4, IPv6) и маршрутизацию пакетов между сетями.",
+      "group": "",
+      "file": "prot/IP.md",
+      "aliases": [
+        "ip"
+      ]
+    },
+    {
+      "id": "bgp",
+      "name": "BGP",
+      "fullName": "Border Gateway Protocol",
+      "description": "Протокол маршрутизации между автономными системами (разными провайдерами). Фактически \"склеивает\" интернет в единое целое.",
+      "group": "",
+      "file": "prot/BGP.md",
+      "aliases": [
+        "bgp"
+      ]
+    },
+    {
+      "id": "ospf",
+      "name": "OSPF",
+      "fullName": "Open Shortest Path First",
+      "description": "Протокол динамической маршрутизации внутри одной автономной системы. Использует алгоритм Дейкстры для поиска кратчайшего пути.",
+      "group": "",
+      "file": "prot/OSPF.md",
+      "aliases": [
+        "ospf"
+      ]
+    },
+    {
+      "id": "rip",
+      "name": "RIP",
+      "fullName": "Routing Information Protocol",
+      "description": "Один из старейших протоколов дистанционно-векторной маршрутизации внутри автономной системы. Простой, но малоэффективен для больших сетей.",
+      "group": "",
+      "file": "prot/RIP.md",
+      "aliases": [
+        "rip"
+      ]
+    },
+    {
+      "id": "tls-ssl",
+      "name": "TLS/SSL",
+      "fullName": "Transport Layer Security / Secure Sockets Layer",
+      "description": "Криптографические протоколы, обеспечивающие безопасную связь поверх TCP. TLS - современная версия, пришедшая на смену SSL.",
+      "group": "",
+      "file": "prot/TLS-SSL.md",
+      "aliases": [
+        "tls-ssl",
+        "tlsssl",
+        "tls/ssl",
+        "tls",
+        "ssl"
+      ]
+    },
+    {
+      "id": "ipsec",
+      "name": "IPsec",
+      "fullName": "Internet Protocol Security",
+      "description": "Набор протоколов для защиты IP-пакетов на сетевом уровне. Используется для создания VPN.",
+      "group": "",
+      "file": "prot/IPsec.md",
+      "aliases": [
+        "ipsec"
+      ]
+    },
+    {
+      "id": "wireguard",
+      "name": "WireGuard",
+      "fullName": "WireGuard VPN",
+      "description": "Современный, простой и высокопроизводительный протокол VPN. Работает на уровне ядра операционной системы.",
+      "group": "",
+      "file": "prot/WireGuard.md",
+      "aliases": [
+        "wireguard"
+      ]
+    },
+    {
+      "id": "openvpn",
+      "name": "OpenVPN",
+      "fullName": "OpenVPN",
+      "description": "Популярный протокол VPN с открытым исходным кодом, гибкий и использующий TLS для шифрования.",
+      "group": "",
+      "file": "prot/OpenVPN.md",
+      "aliases": [
+        "openvpn"
+      ]
+    },
+    {
+      "id": "wpa2-wpa3",
+      "name": "WPA2/WPA3",
+      "fullName": "Wi-Fi Protected Access",
+      "description": "Протоколы безопасности для защиты беспроводных сетей Wi-Fi. Шифруют трафик между устройством и точкой доступа.",
+      "group": "",
+      "file": "prot/WPA2-WPA3.md",
+      "aliases": [
+        "wpa2-wpa3",
+        "wpa2wpa3",
+        "wpa2/wpa3",
+        "wpa2",
+        "wpa3"
+      ]
+    },
+    {
+      "id": "ntp",
+      "name": "NTP",
+      "fullName": "Network Time Protocol",
+      "description": "Протокол для синхронизации системного времени компьютеров в сети с высокой точностью.",
+      "group": "",
+      "file": "prot/NTP.md",
+      "aliases": [
+        "ntp"
+      ]
+    },
+    {
+      "id": "quic",
+      "name": "QUIC",
+      "fullName": "Quick UDP Internet Connections",
+      "description": "Современный транспортный протокол от Google, работающий поверх UDP. Объединяет установление соединения и шифрование, уменьшая задержки. Является основой для HTTP/3.",
+      "group": "",
+      "file": "prot/QUIC.md",
+      "aliases": [
+        "quic"
+      ]
+    },
+    {
+      "id": "grpc",
+      "name": "gRPC",
+      "fullName": "gRPC Remote Procedure Calls",
+      "description": "Современный фреймворк для вызова удалённых процедур (RPC), использующий HTTP/2 в качестве транспорта и Protocol Buffers для описания интерфейсов и сериализации данных.",
+      "group": "",
+      "file": "prot/gRPC.md",
+      "aliases": [
+        "grpc"
+      ]
+    },
+    {
+      "id": "ipv6",
+      "name": "IPv6",
+      "fullName": "Internet Protocol version 6",
+      "description": "Шестая версия IP со 128-битными адресами, пришедшая на смену IPv4 из-за исчерпания адресного пространства.",
+      "group": "Канальный и сетевой уровень",
+      "file": "prot/IPv6.md",
+      "aliases": [
+        "ipv6"
+      ]
+    },
+    {
+      "id": "icmpv6",
+      "name": "ICMPv6",
+      "fullName": "ICMP for IPv6",
+      "description": "Служебный протокол IPv6: ошибки, диагностика, а также NDP и MLD.",
+      "group": "Канальный и сетевой уровень",
+      "file": "prot/ICMPv6.md",
+      "aliases": [
+        "icmpv6"
+      ]
+    },
+    {
+      "id": "ndp",
+      "name": "NDP",
+      "fullName": "Neighbor Discovery Protocol",
+      "description": "Обнаружение соседей в IPv6, заменяет ARP. Поиск MAC, шлюза и автоконфигурация адресов.",
+      "group": "Канальный и сетевой уровень",
+      "file": "prot/NDP.md",
+      "aliases": [
+        "ndp"
+      ]
+    },
+    {
+      "id": "vlan-802.1q",
+      "name": "VLAN / 802.1Q",
+      "fullName": "Virtual LAN",
+      "description": "Логическое разделение сети на изолированные сегменты и передача их меток по транку.",
+      "group": "Канальный и сетевой уровень",
+      "file": "prot/VLAN-802.1Q.md",
+      "aliases": [
+        "vlan-802.1q",
+        "vlan8021q",
+        "vlan / 802.1q",
+        "vlan",
+        "802.1q",
+        "8021q"
+      ]
+    },
+    {
+      "id": "stp-rstp",
+      "name": "STP / RSTP",
+      "fullName": "Spanning Tree Protocol",
+      "description": "Предотвращает петли в сетях с резервными связями между коммутаторами.",
+      "group": "Канальный и сетевой уровень",
+      "file": "prot/STP-RSTP.md",
+      "aliases": [
+        "stp-rstp",
+        "stprstp",
+        "stp / rstp",
+        "stp",
+        "rstp"
+      ]
+    },
+    {
+      "id": "igmp",
+      "name": "IGMP",
+      "fullName": "Internet Group Management Protocol",
+      "description": "Управление членством в multicast-группах IPv4 (например, IPTV).",
+      "group": "Канальный и сетевой уровень",
+      "file": "prot/IGMP.md",
+      "aliases": [
+        "igmp"
+      ]
+    },
+    {
+      "id": "nat",
+      "name": "NAT",
+      "fullName": "Network Address Translation",
+      "description": "Преобразование частных адресов в публичные, экономия IPv4, проброс портов.",
+      "group": "Канальный и сетевой уровень",
+      "file": "prot/NAT.md",
+      "aliases": [
+        "nat"
+      ]
+    },
+    {
+      "id": "vxlan",
+      "name": "VXLAN",
+      "fullName": "Virtual eXtensible LAN",
+      "description": "Оверлейная виртуализация сетей: L2 поверх L3, до 16 млн сегментов. Основа дата-центров.",
+      "group": "Канальный и сетевой уровень",
+      "file": "prot/VXLAN.md",
+      "aliases": [
+        "vxlan"
+      ]
+    },
+    {
+      "id": "lacp",
+      "name": "LACP",
+      "fullName": "Link Aggregation Control Protocol",
+      "description": "Объединение нескольких каналов Ethernet в один логический (EtherChannel/LAG).",
+      "group": "Канальный и сетевой уровень",
+      "file": "prot/LACP.md",
+      "aliases": [
+        "lacp"
+      ]
+    },
+    {
+      "id": "lldp-cdp",
+      "name": "LLDP / CDP",
+      "fullName": "Link Layer Discovery Protocol / Cisco Discovery Protocol",
+      "description": "Обнаружение соседних устройств на канальном уровне, построение карты сети.",
+      "group": "Канальный и сетевой уровень",
+      "file": "prot/LLDP-CDP.md",
+      "aliases": [
+        "lldp-cdp",
+        "lldpcdp",
+        "lldp / cdp",
+        "lldp",
+        "cdp"
+      ]
+    },
+    {
+      "id": "is-is",
+      "name": "IS-IS",
+      "fullName": "Intermediate System to Intermediate System",
+      "description": "Link-state протокол маршрутизации, популярен в магистралях провайдеров.",
+      "group": "Маршрутизация и отказоустойчивость",
+      "file": "prot/IS-IS.md",
+      "aliases": [
+        "is-is",
+        "isis"
+      ]
+    },
+    {
+      "id": "eigrp",
+      "name": "EIGRP",
+      "fullName": "Enhanced Interior Gateway Routing Protocol",
+      "description": "Продвинутый дистанционно-векторный протокол Cisco с быстрой конвергенцией (DUAL).",
+      "group": "Маршрутизация и отказоустойчивость",
+      "file": "prot/EIGRP.md",
+      "aliases": [
+        "eigrp"
+      ]
+    },
+    {
+      "id": "vrrp-hsrp",
+      "name": "VRRP / HSRP",
+      "fullName": "Virtual Router Redundancy / Hot Standby Router Protocol",
+      "description": "Резервирование шлюза по умолчанию: виртуальный IP делят несколько маршрутизаторов.",
+      "group": "Маршрутизация и отказоустойчивость",
+      "file": "prot/VRRP-HSRP.md",
+      "aliases": [
+        "vrrp-hsrp",
+        "vrrphsrp",
+        "vrrp / hsrp",
+        "vrrp",
+        "hsrp"
+      ]
+    },
+    {
+      "id": "mpls",
+      "name": "MPLS",
+      "fullName": "Multiprotocol Label Switching",
+      "description": "Коммутация пакетов по меткам. Основа VPN и Traffic Engineering у провайдеров.",
+      "group": "Маршрутизация и отказоустойчивость",
+      "file": "prot/MPLS.md",
+      "aliases": [
+        "mpls"
+      ]
+    },
+    {
+      "id": "gre",
+      "name": "GRE",
+      "fullName": "Generic Routing Encapsulation",
+      "description": "Простое туннелирование: упаковывает пакеты любых протоколов в IP. Без шифрования.",
+      "group": "Туннели и VPN",
+      "file": "prot/GRE.md",
+      "aliases": [
+        "gre"
+      ]
+    },
+    {
+      "id": "l2tp",
+      "name": "L2TP",
+      "fullName": "Layer 2 Tunneling Protocol",
+      "description": "Туннелирование PPP через IP, обычно в связке L2TP/IPsec.",
+      "group": "Туннели и VPN",
+      "file": "prot/L2TP.md",
+      "aliases": [
+        "l2tp"
+      ]
+    },
+    {
+      "id": "pptp",
+      "name": "PPTP",
+      "fullName": "Point-to-Point Tunneling Protocol",
+      "description": "Один из первых VPN-протоколов. Устарел и небезопасен.",
+      "group": "Туннели и VPN",
+      "file": "prot/PPTP.md",
+      "aliases": [
+        "pptp"
+      ]
+    },
+    {
+      "id": "pppoe",
+      "name": "PPPoE",
+      "fullName": "PPP over Ethernet",
+      "description": "Передача PPP-сессий поверх Ethernet. Используется провайдерами (DSL, FTTB).",
+      "group": "Туннели и VPN",
+      "file": "prot/PPPoE.md",
+      "aliases": [
+        "pppoe"
+      ]
+    },
+    {
+      "id": "sftp",
+      "name": "SFTP",
+      "fullName": "SSH File Transfer Protocol",
+      "description": "Передача и управление файлами поверх SSH. Не путать с FTP.",
+      "group": "Передача файлов",
+      "file": "prot/SFTP.md",
+      "aliases": [
+        "sftp"
+      ]
+    },
+    {
+      "id": "scp",
+      "name": "SCP",
+      "fullName": "Secure Copy Protocol",
+      "description": "Простое копирование файлов через SSH. Устаревший протокол.",
+      "group": "Передача файлов",
+      "file": "prot/SCP.md",
+      "aliases": [
+        "scp"
+      ]
+    },
+    {
+      "id": "tftp",
+      "name": "TFTP",
+      "fullName": "Trivial File Transfer Protocol",
+      "description": "Упрощённая передача файлов по UDP. Используется для PXE и прошивок.",
+      "group": "Передача файлов",
+      "file": "prot/TFTP.md",
+      "aliases": [
+        "tftp"
+      ]
+    },
+    {
+      "id": "ftps",
+      "name": "FTPS",
+      "fullName": "FTP over TLS/SSL",
+      "description": "Классический FTP с шифрованием TLS.",
+      "group": "Передача файлов",
+      "file": "prot/FTPS.md",
+      "aliases": [
+        "ftps"
+      ]
+    },
+    {
+      "id": "http2",
+      "name": "HTTP/2",
+      "fullName": "HTTP version 2",
+      "description": "Двоичный HTTP с мультиплексированием потоков и сжатием заголовков HPACK.",
+      "group": "Веб",
+      "file": "prot/HTTP2.md",
+      "aliases": [
+        "http2",
+        "http/2",
+        "http",
+        "2"
+      ]
+    },
+    {
+      "id": "http3",
+      "name": "HTTP/3",
+      "fullName": "HTTP version 3",
+      "description": "HTTP поверх QUIC (UDP): без head-of-line blocking, миграция соединений.",
+      "group": "Веб",
+      "file": "prot/HTTP3.md",
+      "aliases": [
+        "http3",
+        "http/3",
+        "http",
+        "3"
+      ]
+    },
+    {
+      "id": "kerberos",
+      "name": "Kerberos",
+      "fullName": "Kerberos",
+      "description": "Аутентификация по билетам и SSO. Основной протокол в Active Directory.",
+      "group": "Аутентификация и безопасность",
+      "file": "prot/Kerberos.md",
+      "aliases": [
+        "kerberos"
+      ]
+    },
+    {
+      "id": "radius",
+      "name": "RADIUS",
+      "fullName": "Remote Authentication Dial-In User Service",
+      "description": "Централизованная AAA для Wi-Fi, 802.1X, VPN.",
+      "group": "Аутентификация и безопасность",
+      "file": "prot/RADIUS.md",
+      "aliases": [
+        "radius"
+      ]
+    },
+    {
+      "id": "tacacs+",
+      "name": "TACACS+",
+      "fullName": "Terminal Access Controller Access-Control System Plus",
+      "description": "AAA Cisco для администрирования устройств, с авторизацией команд.",
+      "group": "Аутентификация и безопасность",
+      "file": "prot/TACACS+.md",
+      "aliases": [
+        "tacacs+"
+      ]
+    },
+    {
+      "id": "802.1x-eap",
+      "name": "802.1X / EAP",
+      "fullName": "Port-Based Network Access Control",
+      "description": "Контроль доступа к сети на уровне порта (WPA-Enterprise, проводной 802.1X).",
+      "group": "Аутентификация и безопасность",
+      "file": "prot/802.1X-EAP.md",
+      "aliases": [
+        "802.1x-eap",
+        "8021xeap",
+        "802.1x / eap",
+        "802.1x",
+        "8021x",
+        "eap"
+      ]
+    },
+    {
+      "id": "oauth-oidc",
+      "name": "OAuth 2.0 / OIDC",
+      "fullName": "OAuth 2.0 / OpenID Connect",
+      "description": "Делегированная авторизация и вход «Через Google/GitHub» для веба и API.",
+      "group": "Аутентификация и безопасность",
+      "file": "prot/OAuth-OIDC.md",
+      "aliases": [
+        "oauth-oidc",
+        "oauthoidc",
+        "oauth 2.0 / oidc",
+        "oauth20oidc",
+        "oauth 2.0",
+        "oauth20",
+        "oidc"
+      ]
+    },
+    {
+      "id": "saml",
+      "name": "SAML",
+      "fullName": "Security Assertion Markup Language",
+      "description": "Корпоративный SSO на базе XML (Okta, Entra ID, ADFS).",
+      "group": "Аутентификация и безопасность",
+      "file": "prot/SAML.md",
+      "aliases": [
+        "saml"
+      ]
+    },
+    {
+      "id": "dnssec",
+      "name": "DNSSEC",
+      "fullName": "DNS Security Extensions",
+      "description": "Цифровые подписи записей DNS: защита от подмены ответов.",
+      "group": "Аутентификация и безопасность",
+      "file": "prot/DNSSEC.md",
+      "aliases": [
+        "dnssec"
+      ]
+    },
+    {
+      "id": "doh-dot",
+      "name": "DoH / DoT",
+      "fullName": "DNS over HTTPS / DNS over TLS",
+      "description": "Шифрование DNS-запросов между клиентом и резолвером.",
+      "group": "Аутентификация и безопасность",
+      "file": "prot/DoH-DoT.md",
+      "aliases": [
+        "doh-dot",
+        "dohdot",
+        "doh / dot",
+        "doh",
+        "dot"
+      ]
+    },
+    {
+      "id": "socks",
+      "name": "SOCKS",
+      "fullName": "Socket Secure",
+      "description": "Прокси сеансового уровня для произвольных TCP/UDP-соединений (Tor, SSH-туннели).",
+      "group": "Аутентификация и безопасность",
+      "file": "prot/SOCKS.md",
+      "aliases": [
+        "socks"
+      ]
+    },
+    {
+      "id": "syslog",
+      "name": "Syslog",
+      "fullName": "System Logging Protocol",
+      "description": "Централизованный сбор журналов с устройств и серверов.",
+      "group": "Сервисные протоколы",
+      "file": "prot/Syslog.md",
+      "aliases": [
+        "syslog"
+      ]
+    },
+    {
+      "id": "netflow-ipfix",
+      "name": "NetFlow / IPFIX",
+      "fullName": "NetFlow / IP Flow Information Export",
+      "description": "Сбор статистики о сетевых потоках для мониторинга и анализа трафика.",
+      "group": "Сервисные протоколы",
+      "file": "prot/NetFlow-IPFIX.md",
+      "aliases": [
+        "netflow-ipfix",
+        "netflowipfix",
+        "netflow / ipfix",
+        "netflow",
+        "ipfix"
+      ]
+    },
+    {
+      "id": "mdns-dns-sd",
+      "name": "mDNS / DNS-SD",
+      "fullName": "Multicast DNS / DNS Service Discovery",
+      "description": "Разрешение имён и поиск сервисов в локальной сети без DNS-сервера (Bonjour, Avahi).",
+      "group": "Сервисные протоколы",
+      "file": "prot/mDNS-DNS-SD.md",
+      "aliases": [
+        "mdns-dns-sd",
+        "mdnsdnssd",
+        "mdns / dns-sd",
+        "mdns",
+        "dns-sd",
+        "dnssd"
+      ]
+    },
+    {
+      "id": "llmnr",
+      "name": "LLMNR",
+      "fullName": "Link-Local Multicast Name Resolution",
+      "description": "Резолвинг имён в сегменте от Microsoft. Устаревает, рекомендуется отключать.",
+      "group": "Сервисные протоколы",
+      "file": "prot/LLMNR.md",
+      "aliases": [
+        "llmnr"
+      ]
+    },
+    {
+      "id": "netbios",
+      "name": "NetBIOS",
+      "fullName": "Network Basic Input/Output System",
+      "description": "Устаревший интерфейс для сетей Windows (имена, датаграммы, сеансы).",
+      "group": "Сервисные протоколы",
+      "file": "prot/NetBIOS.md",
+      "aliases": [
+        "netbios"
+      ]
+    },
+    {
+      "id": "webrtc",
+      "name": "WebRTC",
+      "fullName": "Web Real-Time Communication",
+      "description": "Набор технологий для P2P аудио, видео и данных прямо в браузере.",
+      "group": "Медиа и реальное время",
+      "file": "prot/WebRTC.md",
+      "aliases": [
+        "webrtc"
+      ]
+    },
+    {
+      "id": "stun-turn-ice",
+      "name": "STUN / TURN / ICE",
+      "fullName": "NAT traversal",
+      "description": "Установление соединения между устройствами за NAT (основа WebRTC и VoIP).",
+      "group": "Медиа и реальное время",
+      "file": "prot/STUN-TURN-ICE.md",
+      "aliases": [
+        "stun-turn-ice",
+        "stunturnice",
+        "stun / turn / ice",
+        "stun",
+        "turn",
+        "ice"
+      ]
+    },
+    {
+      "id": "srtp-rtcp",
+      "name": "SRTP / RTCP",
+      "fullName": "Secure RTP / RTP Control Protocol",
+      "description": "Шифрование медиапотока и контроль его качества (компаньоны RTP).",
+      "group": "Медиа и реальное время",
+      "file": "prot/SRTP-RTCP.md",
+      "aliases": [
+        "srtp-rtcp",
+        "srtprtcp",
+        "srtp / rtcp",
+        "srtp",
+        "rtcp"
+      ]
+    },
+    {
+      "id": "coap",
+      "name": "CoAP",
+      "fullName": "Constrained Application Protocol",
+      "description": "Лёгкий REST-подобный протокол поверх UDP для маломощных IoT-устройств.",
+      "group": "IoT и промышленные протоколы",
+      "file": "prot/CoAP.md",
+      "aliases": [
+        "coap"
+      ]
+    },
+    {
+      "id": "amqp",
+      "name": "AMQP",
+      "fullName": "Advanced Message Queuing Protocol",
+      "description": "Корпоративный обмен сообщениями через брокер с гарантией доставки (RabbitMQ).",
+      "group": "IoT и промышленные протоколы",
+      "file": "prot/AMQP.md",
+      "aliases": [
+        "amqp"
+      ]
+    },
+    {
+      "id": "modbus",
+      "name": "Modbus",
+      "fullName": "Modbus",
+      "description": "Классический промышленный протокол для ПЛК и датчиков (SCADA/АСУ ТП).",
+      "group": "IoT и промышленные протоколы",
+      "file": "prot/Modbus.md",
+      "aliases": [
+        "modbus"
+      ]
+    },
+    {
+      "id": "dns",
+      "name": "DNS",
+      "fullName": "Domain Name System",
+      "description": "распределенная система имен, преобразующая удобные для человека доменные имена (например, google.com) в машинные IP-адреса (например, 172.217.164.110).",
+      "group": "",
+      "file": "prot/DNS.md",
+      "aliases": [
+        "dns"
+      ]
+    }
+  ]
+}
