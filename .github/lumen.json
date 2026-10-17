@@ -4,408 +4,476 @@
     {
       "code": 100,
       "phrase": "Continue",
+      "nameRu": "Продолжай",
       "description": "Запрос принят, клиент должен продолжать отправку.",
       "category": "1xx"
     },
     {
       "code": 101,
       "phrase": "Switching Protocols",
+      "nameRu": "Переключение протоколов",
       "description": "Сервер переключается на другой протокол.",
       "category": "1xx"
     },
     {
       "code": 102,
       "phrase": "Processing",
+      "nameRu": "Идёт обработка",
       "description": "Запрос в обработке.",
       "category": "1xx"
     },
     {
       "code": 103,
       "phrase": "Early Hints",
+      "nameRu": "Ранние подсказки",
       "description": "Ранние подсказки, предзагрузка ресурсов.",
       "category": "1xx"
     },
     {
       "code": 200,
       "phrase": "OK",
+      "nameRu": "Успешно",
       "description": "Запрос успешно обработан.",
       "category": "2xx"
     },
     {
       "code": 201,
       "phrase": "Created",
+      "nameRu": "Создано",
       "description": "Ресурс успешно создан.",
       "category": "2xx"
     },
     {
       "code": 202,
       "phrase": "Accepted",
+      "nameRu": "Принято",
       "description": "Запрос принят, но обработка не завершена.",
       "category": "2xx"
     },
     {
       "code": 203,
       "phrase": "Non-Authoritative Information",
+      "nameRu": "Информация не от первоисточника",
       "description": "Данные возвращены из изменённой прокси копии, а не оригинала сервера.",
       "category": "2xx"
     },
     {
       "code": 204,
       "phrase": "No Content",
+      "nameRu": "Нет содержимого",
       "description": "Запрос выполнен, контент отсутствует.",
       "category": "2xx"
     },
     {
       "code": 205,
       "phrase": "Reset Content",
+      "nameRu": "Сбросить содержимое",
       "description": "Запрос выполнен, клиенту следует сбросить представление (например, очистить форму).",
       "category": "2xx"
     },
     {
       "code": 206,
       "phrase": "Partial Content",
+      "nameRu": "Частичное содержимое",
       "description": "Частичное содержимое.",
       "category": "2xx"
     },
     {
       "code": 207,
       "phrase": "Multi-Status (WebDAV)",
+      "nameRu": "Многостатусный (WebDAV)",
       "description": "Сообщение содержит несколько статусов для разных частей запроса",
       "category": "2xx"
     },
     {
       "code": 208,
       "phrase": "Already Reported (WebDAV)",
+      "nameRu": "Уже сообщалось (WebDAV)",
       "description": "Повторяющиеся зависимости уже были перечислены в предыдущем ответе.",
       "category": "2xx"
     },
     {
       "code": 226,
       "phrase": "IM Used (HTTP Delta Encoding)",
+      "nameRu": "Использованы манипуляции",
       "description": "Сервер выполнил GET-запрос, и ответ представляет результат одного или нескольких манипуляций с экземпляром.",
       "category": "2xx"
     },
     {
       "code": 300,
       "phrase": "Multiple Choices",
+      "nameRu": "Множество вариантов",
       "description": "Есть несколько вариантов ресурса, клиент выбирает один.",
       "category": "3xx"
     },
     {
       "code": 301,
       "phrase": "Moved Permanently",
+      "nameRu": "Перемещено навсегда",
       "description": "Ресурс перемещен навсегда.",
       "category": "3xx"
     },
     {
       "code": 302,
       "phrase": "Found",
+      "nameRu": "Найдено (Временное перенаправление)",
       "description": "Временное перенаправление.",
       "category": "3xx"
     },
     {
       "code": 303,
       "phrase": "See Other",
+      "nameRu": "Смотри другое",
       "description": "Ответ на запрос находится по другому адресу (всегда ведёт к GET).",
       "category": "3xx"
     },
     {
       "code": 304,
       "phrase": "Not Modified",
+      "nameRu": "Не изменялось",
       "description": "Ресурс не изменился с последнего обращения.",
       "category": "3xx"
     },
     {
       "code": 305,
       "phrase": "Use Proxy",
+      "nameRu": "Используйте прокси",
       "description": "Запрос к ресурсу должен осуществляться через прокси.",
       "category": "3xx"
     },
     {
       "code": 307,
       "phrase": "Temporary Redirect",
+      "nameRu": "Временное перенаправление",
       "description": "Временное перенаправление с сохранением метода.",
       "category": "3xx"
     },
     {
       "code": 308,
       "phrase": "Permanent Redirect",
+      "nameRu": "Постоянное перенаправление",
       "description": "Постоянное перенаправление с сохранением метода.",
       "category": "3xx"
     },
     {
       "code": 400,
       "phrase": "Bad Request",
+      "nameRu": "Некорректный запрос",
       "description": "Некорректный запрос.",
       "category": "4xx"
     },
     {
       "code": 401,
       "phrase": "Unauthorized",
+      "nameRu": "Не авторизован",
       "description": "Требуется аутентификация.",
       "category": "4xx"
     },
     {
       "code": 402,
       "phrase": "Payment Required",
+      "nameRu": "Требуется оплата",
       "description": "Зарезервирован для будущего использования; применяется некоторыми платёжными сервисами и API.",
       "category": "4xx"
     },
     {
       "code": 403,
       "phrase": "Forbidden",
+      "nameRu": "Доступ запрещён",
       "description": "Доступ запрещен.",
       "category": "4xx"
     },
     {
       "code": 404,
       "phrase": "Not Found",
+      "nameRu": "Ресурс не найден",
       "description": "Ресурс не найден.",
       "category": "4xx"
     },
     {
       "code": 405,
       "phrase": "Method Not Allowed",
+      "nameRu": "Метод не поддерживается",
       "description": "Метод (GET, POST и т.д.) не поддерживается для данного URL (но поддерживается для других).",
       "category": "4xx"
     },
     {
       "code": 406,
       "phrase": "Not Acceptable",
+      "nameRu": "Неприемлемо",
       "description": "Сервер не может выдать ответ в формате, указанном в заголовках Accept клиента.",
       "category": "4xx"
     },
     {
       "code": 407,
       "phrase": "Proxy Authentication Required",
+      "nameRu": "Требуется аутентификация прокси",
       "description": "Требуется аутентификация для прокси-сервера.",
       "category": "4xx"
     },
     {
       "code": 408,
       "phrase": "Request Timeout",
+      "nameRu": "Время ожидания истекло",
       "description": "Сервер не дождался полного запроса от клиента в течение установленного времени.",
       "category": "4xx"
     },
     {
       "code": 409,
       "phrase": "Conflict",
+      "nameRu": "Конфликт",
       "description": "Запрос конфликтует с текущим состоянием сервера.",
       "category": "4xx"
     },
     {
       "code": 410,
       "phrase": "Gone",
+      "nameRu": "Ресурс удалён навсегда",
       "description": "Ресурс удален навсегда.",
       "category": "4xx"
     },
     {
       "code": 411,
       "phrase": "Length Required",
+      "nameRu": "Требуется длина",
       "description": "Для запроса требуется указать заголовок Content-Length.",
       "category": "4xx"
     },
     {
       "code": 412,
       "phrase": "Precondition Failed",
+      "nameRu": "Условие не выполнено",
       "description": "Не выполнено одно из условий, заданных в заголовках запроса (например, If-Match).",
       "category": "4xx"
     },
     {
       "code": 413,
       "phrase": "Payload Too Large",
+      "nameRu": "Тело запроса слишком велико",
       "description": "(ранее \"Request Entity Too Large\") — Тело запроса превышает лимит, установленный сервером.",
       "category": "4xx"
     },
     {
       "code": 414,
       "phrase": "URI Too Long",
+      "nameRu": "URI слишком длинный",
       "description": "Длина запрашиваемого URL превышает лимит сервера.",
       "category": "4xx"
     },
     {
       "code": 415,
       "phrase": "Unsupported Media Type",
+      "nameRu": "Неподдерживаемый медиа-тип",
       "description": "Сервер не поддерживает формат данных, указанный в теле запроса.",
       "category": "4xx"
     },
     {
       "code": 416,
       "phrase": "Range Not Satisfiable",
+      "nameRu": "Диапазон недостижим",
       "description": "Запрошенный диапазон (в Range) не может быть выполнен (выходит за пределы файла).",
       "category": "4xx"
     },
     {
       "code": 417,
       "phrase": "Expectation Failed",
+      "nameRu": "Ожидание не выполнено",
       "description": "Сервер не может удовлетворить условию, указанному в заголовке Expect.",
       "category": "4xx"
     },
     {
       "code": 418,
       "phrase": "I'm a teapot (RFC 2324, шуточный)",
+      "nameRu": "Я — чайник (RFC 2324)",
       "description": "Сервер — чайник, не может заваривать кофе.",
       "category": "4xx"
     },
     {
       "code": 421,
       "phrase": "Misdirected Request",
+      "nameRu": "Неверно направленный запрос",
       "description": "Запрос был отправлен на сервер, не способный дать ответ (проблема с конфигурацией).",
       "category": "4xx"
     },
     {
       "code": 422,
       "phrase": "Unprocessable Entity",
+      "nameRu": "Необрабатываемый контент",
       "description": "Запрос синтаксически корректен, но содержит семантические ошибки (например, невалидное поле).",
       "category": "4xx"
     },
     {
       "code": 423,
       "phrase": "Locked",
+      "nameRu": "Ресурс заблокирован",
       "description": "Ресурс, к которому обращаются, заблокирован.",
       "category": "4xx"
     },
     {
       "code": 424,
       "phrase": "Failed Dependency",
+      "nameRu": "Невыполненная зависимость",
       "description": "Запрос не выполнен из-за неудачи предыдущего запроса.",
       "category": "4xx"
     },
     {
       "code": 425,
       "phrase": "Too Early",
+      "nameRu": "Слишком рано",
       "description": "Сервер не хочет рисковать обрабатывать запрос, который может быть повторён (из-за атаки повторения).",
       "category": "4xx"
     },
     {
       "code": 426,
       "phrase": "Upgrade Required",
+      "nameRu": "Требуется обновление",
       "description": "Сервер требует перехода на другой протокол (например, TLS/1.3).",
       "category": "4xx"
     },
     {
       "code": 428,
       "phrase": "Precondition Required",
+      "nameRu": "Требуется условие",
       "description": "Сервер требует, чтобы запрос был условным (например, с If-Match).",
       "category": "4xx"
     },
     {
       "code": 429,
       "phrase": "Too Many Requests",
+      "nameRu": "Слишком много запросов",
       "description": "Слишком много запросов.",
       "category": "4xx"
     },
     {
       "code": 431,
       "phrase": "Request Header Fields Too Large",
+      "nameRu": "Заголовки запроса слишком велики",
       "description": "Заголовки запроса слишком велики для обработки.",
       "category": "4xx"
     },
     {
       "code": 450,
       "phrase": "Blocked by Windows Parental Controls",
+      "nameRu": "Блокировка родительским контролем",
       "description": "Доступ заблокирован родительским контролем Windows.",
       "category": "4xx"
     },
     {
       "code": 451,
       "phrase": "Unavailable For Legal Reasons",
+      "nameRu": "Недоступно по закону",
       "description": "Доступ к ресурсу закрыт по юридическим причинам (цензура, авторские права).",
       "category": "4xx"
     },
     {
       "code": 500,
       "phrase": "Internal Server Error",
+      "nameRu": "Внутренняя ошибка сервера",
       "description": "Внутренняя ошибка сервера.",
       "category": "5xx"
     },
     {
       "code": 501,
       "phrase": "Not Implemented",
+      "nameRu": "Не реализовано",
       "description": "Сервер не поддерживает функциональность, необходимую для выполнения запроса (например, неизвестный метод).",
       "category": "5xx"
     },
     {
       "code": 502,
       "phrase": "Bad Gateway",
+      "nameRu": "Ошибочный шлюз",
       "description": "Ошибки шлюза.",
       "category": "5xx"
     },
     {
       "code": 503,
       "phrase": "Service Unavailable",
+      "nameRu": "Сервис недоступен",
       "description": "Сервис недоступен.",
       "category": "5xx"
     },
     {
       "code": 504,
       "phrase": "Gateway Timeout",
+      "nameRu": "Таймаут шлюза",
       "description": "Таймаут шлюза.",
       "category": "5xx"
     },
     {
       "code": 505,
       "phrase": "HTTP Version Not Supported",
+      "nameRu": "Версия HTTP не поддерживается",
       "description": "Версия HTTP не поддерживается.",
       "category": "5xx"
     },
     {
       "code": 506,
       "phrase": "Variant Also Negotiates",
+      "nameRu": "Вариант тоже согласует",
       "description": "На сервере произошла ошибка конфигурации: выбранный вариант ресурса сам инициирует согласование содержимого.",
       "category": "5xx"
     },
     {
       "code": 507,
       "phrase": "Insufficient Storage",
+      "nameRu": "Недостаточно места",
       "description": "Не удалось выполнить запрос из-за нехватки места на сервере.",
       "category": "5xx"
     },
     {
       "code": 508,
       "phrase": "Loop Detected",
+      "nameRu": "Обнаружено зацикливание",
       "description": "Сервер обнаружил бесконечный цикл при обработке запроса.",
       "category": "5xx"
     },
     {
       "code": 509,
       "phrase": "Bandwidth Limit Exceeded",
+      "nameRu": "Исчерпана пропускная способность",
       "description": "Исчерпана пропускная способность",
       "category": "5xx"
     },
     {
       "code": 510,
       "phrase": "Not Extended",
+      "nameRu": "Не расширено",
       "description": "Для доступа к ресурсу требуется расширить запрос.",
       "category": "5xx"
     },
     {
       "code": 511,
       "phrase": "Network Authentication Required",
+      "nameRu": "Требуется сетевая аутентификация",
       "description": "Требуется аутентификация в сети",
       "category": "5xx"
     },
     {
       "code": 526,
       "phrase": "Invalid SSL Certificate",
+      "nameRu": "Недействительный SSL-сертификат",
       "description": "Недействительный SSL-сертификат.",
       "category": "5xx"
     },
     {
       "code": 529,
       "phrase": "Site is overloaded",
+      "nameRu": "Сайт перегружен",
       "description": "Сайт перегружен.",
       "category": "5xx"
     },
     {
       "code": 530,
       "phrase": "Site is frozen",
+      "nameRu": "Сайт заморожен",
       "description": "Сайт \"заморожен\"",
       "category": "5xx"
     },
     {
       "code": 598,
       "phrase": "Network Read Timeout",
+      "nameRu": "Таймаут чтения сети",
       "description": "Неформальный код, используемый некоторыми прокси для таймаута чтения сети.",
       "category": "5xx"
     }
